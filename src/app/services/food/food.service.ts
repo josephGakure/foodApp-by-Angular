@@ -15,9 +15,9 @@ export class FoodService {
  }
  getAllTags():Tag[] {
   return [
-    { name: 'All', count: 14 },
+    { name: 'All', count: 10 },
     { name: 'FastFood', count: 4 },
-    { name: 'Lunch', count: 2 },
+    { name: 'Lunch', count: 4 },
     { name: 'SlowFood', count: 3 },
     { name: 'Fries', count: 3 },
     { name: 'Spaggetis', count: 2 },
