@@ -8,6 +8,13 @@ import { Tag } from 'src/app/shared/models/Tag';
 export class FoodService {
 
   constructor() { }
+
+  getFoodById(id:number): Foods{
+    return this.getAll().find(food =>food.id)!;
+
+  }
+
+
   getAllFoodByTag(tag:string):Foods[] {
     return tag == "All" ?
      this.getAll() : this.getAll().filter(food => food.tags?.
@@ -122,7 +129,7 @@ export class FoodService {
     id:2,
     name:'scones $ lemonade',
     price:450,
-    cookTime:'40min',
+    cookTime:'20min',
     favorite:true,
     origins:['Italy','France'],
     star:1.5,
